@@ -1,0 +1,148 @@
+body {
+  background: #f2f2f2;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: 'Cormorant Garamond', serif;
+}
+h1:before {
+  position: absolute;
+  content: '';
+  bottom: -20px;
+  width: 640px;
+  height: 2px;
+  background: #e74c3c;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #676767;
+}
+
+.divTable {
+	display: table;
+	width: 100%;
+}
+.divTableRow:not(.random_nums) {
+	display: table-row;
+}
+.divTableRow:not(.random_cons) {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #f2f2f2;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #f2f2f2;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #f2f2f2;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.buttons-coll {
+  width: 90%;
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+}
+button {
+  margin: 20px;
+  width: 150px;
+  height: 40px;
+}
+.custom-btn {
+  padding: 10px 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+/**** BTN No. 1 ****/
+.btn-1 {
+  border: 2px solid #000;
+}
+.btn-1:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-1:active {
+  top: 2px;
+}
+
+#nums {
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  display: table;
+}
+#nums .num {
+  width: 80px;
+  height:80px;
+  display: inline-block;
+  cursor: default;
+  color: #000;
+  margin: 12px 6px 0 6px;
+  border: 3px solid #000;
+  background:#f2f2f2;
+  text-align:center;
+  vertical-align:middle;
+  line-height: 80px;
+}
+
+#container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  }
+text { 
+  font-family: 'Cormorant Garamond', serif; 
+  font-size: 11px;
+}
+tspan.pivot { 
+  fill: #000
+}
+path.link { 
+  stroke: #000; fill: none; 
+}
+text.unsorted { 
+  fill: #676767; 
+} 
+text.sorted { 
+  fill: #000; 
+}
+tspan.pivot { 
+  fill: #e74c3c; 
+  font-weight: bold;
+}
+circle.unsorted { 
+  fill: #676767; 
+}
+circle.sorted { 
+  fill: #000; 
+}
+
+
+ 
+ 
+
+ 

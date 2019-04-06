@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/sort.png">
+		<script src="js/jquery.js"></script>
+		<script src="js/swap.js"></script>
+		<script src="js/bubble.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/binary.js"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript">
+			function openbox(id1,id2){
+				display1 = document.getElementById(id1).style.display;
+				display2 = document.getElementById(id2).style.display;
+			
+				if(display1=='none'){
+					document.getElementById(id1).style.display='block';
+					document.getElementById(id2).style.display='none';
+				}
+				else{
+					document.getElementById(id1).style.display='none';
+					document.getElementById(id2).style.display='block';
+				}
+			}
+		</script>
+		<title>Анимированная сортировка</title>
+	</head>
+	<body>
+		<h1>Анимированная сортировка</h1>
+		<p>Нажмите "Random", чтобы сгенерировать массив, и выберите метод сортировки</p>	  
+		<div class="divTable">
+			<div class="divTableBody">
+				<div class="divTableRow">
+					<div class="divTableCell">
+						<div class="buttons-coll">
+							<button class="custom-btn btn-1" id="random">Random</button> 
+							<button disabled class="custom-btn btn-1" id="bubble" onclick="openbox('nums','container'); return false">Bubble sort</button>
+							<button disabled class="custom-btn btn-1" id="binary" onclick="openbox('container','nums'); return false">Binary tree</button>
+						</div>
+					</div>
+				</div>
+				<div class="divTableRow">
+					<div class="divTableCell">
+						<p>Сгенерированные числа: <span class="numbers"></span></p>
+					</div>
+				</div>
+				<div class="divTableRow random_nums" style="text-align: center;">
+					<div class="divTableCell" id="nums" style="display: none;"></div>
+				</div>
+				<div class="divTableRow random_cons" style="text-align: center;">
+					<div class="divTableCell" id="container" style="display: none;"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
